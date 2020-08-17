@@ -6,15 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    width: 100%;
-    overflow: hidden;
 }
 
 /* Head Region */
 
 #headerRegion > div {
     position: relative;
-    left: 82%;
+    left: 50%;
 }
 
 
@@ -92,4 +90,15 @@ body {
     color: #707070;
     size: 14px;
     line-height: 27px;
+}
+/* End of Center */
+
+#belowCenter {
+    text-align: center;
+    margin: 15px
+}
+
+#belowCenter a {
+    text-decoration: none;
+    color: #1a
 }
