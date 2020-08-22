@@ -1,104 +1,179 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Head Region */
+#headerRegion {
+  font-size: 13px;
+  position: relative;
+  margin: 5px;
+  font-size: 10px;
+  font-weight: 300;
+  color: rgba(126, 126, 126, 0.57)
+}
 
-#headerRegion > div {
-    position: relative;
-    left: 50%;
+.div1 a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.top {
+  position: relative;
+  left: 1068px;
+}
+
+.top a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.top a:nth-child(3) {
+  position: relative;
+  top: 5px;
+}
+
+a.imgicon {
+  width: 28px;
+  height: 27px;
+  background: url(profile.jpg) no-repeat;
+  border-radius: 3.0000000415452836e24px;
+  fill: 100%;
+}
+
+.top a:nth-child(4) {
+  position: relative;
+  top: 9px;
+}
+
+/*  */
+
+#centerRegion {
+  text-align: center;
+}
+
+div.gimg {
+  width: 272px;
+  height: 90px;
+  background: url(google.png) no-repeat;
+  position: relative;
+  top: 90px;
+  left: 510px;
+}
+
+div.form {
+  position: relative;
+  top: 120px;
+}
+
+input[type="text"] {
+  width: 480px;
+  border: 1px solid rgb(224, 224, 224);
+  outline: none;
+  border-radius: 50px;
+  padding: 12px 39px 12px 39px;
+  background-color: transparent;
+}
+
+input[type="text"]:focus {
+  border-color: rgb(238, 236, 236);
+  box-shadow: 1px 1px 3px 0 rgb(211, 211, 211);
+}
+
+input[type="text"]:hover {
+  border-color: rgb(238, 236, 236);
+  box-shadow: 1px 1px 3px 0 rgb(211, 211, 211);
+}
+
+.form a:nth-child(2) {
+  position: relative;
+  right: 475px;
+  top: 8px;
+}
+
+.form a:nth-child(3) {
+  position: relative;
+  right: 70px;
+  top: 7px;
+}
+
+div.buttons {
+  position: relative;
+  top: 145px;
+  right: 8px;
+}
+
+div.buttons button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+div.buttons a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222;
+}
+/*  */
+
+div#belowCenter {
+  text-align: center;
+  position: relative;
+  top: 170px;
+  right: 20px;
+  font-size: 13px;
+}
+
+div#belowCenter a {
+  text-decoration: none;
+  color: #1a0dab;
+}
+/*  */
+
+div#footerRegion {
+  position: relative;
+  top: 365px;
+  background: rgb(241, 240, 240);
+  height: 73px;
+}
+
+div#footerRegion h2 {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 9px 15px;
+  border-top: 1px solid rgb(223, 220, 220);
+  border-bottom: 1px solid rgb(223, 220, 220);
+}
+
+div#footerRegion span a {
+  text-decoration: none;
+  color: #5f6368;
+  font-size: 14px;
+  padding: 3px;
+}
+
+div#footerRegion .span1 {
+  position: relative;
+  left: 12px;
+  top: 8px;
+}
+
+div#footerRegion .span2 {
+  position: relative;
+  left: 870px;
+  top: 8px;
 }
 
 
-#headerRegion .top h3, a {
-    display: inline-block;
-    margin: 4px;
-    font-size: .9em;
-}
-/* ----End of Head Region */
-
-/* Center Region */
-#centerRegion .subRegion h1{
-    text-align: center;
-    margin: 120px 0 10px 0;
-    font-size: 80px;
-    letter-spacing: -3px;
-    font-style: initial;
-    font-weight: 400;
-    font-style: normal;
-    border-radius: 1px;
-}
-
-.fCol {
-    color: #4285f4;
-}
-
-.sColor {
-    color: #ea4335;
-}
-
-.tColor {
-    color: #fbbc05;
-}
-
-.lColor {
-    color: #34a853;
-}
-
-.form {
-    display: block;
-}
-
-.form {
-    text-align: center;
-}
-#textField {
-    width: 500px;
-    padding: 13px;
-    margin: 25px 0 5px 0;
-    border: 1px solid #d1d1d1;
-    border-radius: 78px;
-}
-
-#textField:focus, #textField:hover {
-    box-shadow: 1px 1px 9px 1px #d1d1d1;
-    width: 520px;
-}
-
-
-
-.buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.button1, .button2 {
-    margin: 10px;
-    border: none;
-    padding: 5px 14px;
-
-}
-
-.buttons a {
-    text-decoration: none;
-    color: #707070;
-    size: 14px;
-    line-height: 27px;
-}
-/* End of Center */
-
-#belowCenter {
-    text-align: center;
-    margin: 15px
-}
-
-#belowCenter a {
-    text-decoration: none;
-    color: #1a
-}
+/*  */
