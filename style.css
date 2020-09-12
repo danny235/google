@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -8,231 +8,214 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-div#headerRegion {
-  font-size: 13px;
-  position: relative;
-  margin: 20px;
-  margin-top: 20px;
-  min-width: 90%;
+/* Global */
+.container {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear-fix {
+  clear: right;
+}
+
+.seperator {
+  height: 180px;
+}
+
+/* ----- */
+
+header {
+  margin-top: -10px;
+}
+
+
+nav.container {
+  padding-top: 18px;
+}
+
+nav.container span.top a {
+  color: rgb(44, 44, 44);
   font-size: 10px;
   font-weight: 300;
-  color: rgba(126, 126, 126, 0.57);
-  height: 100px;
+  font-style: normal;
 }
 
-.div1 {
-  clear: both;
-}
-.div1 a {
-  color: black;
-  display: inline-block;
-  text-decoration: none;
-  padding: 6px;
+
+span.div1 a.a1 {
+  grid-column: 1;
 }
 
-.top {
-  clear: left;
-  position: relative;
-  /* left: 900px; */
+span.div1 a.a2 {
+  grid-column: 3;
+}
+
+span.top {
+  display: flex;
   float: right;
-  min-width: 5%;
-  margin-top: -13px;
+  align-items: center;
+  padding-left: 10px;
 }
 
-.top a {
-  color: black;
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px;
+span.top a.gm {
+  padding-right: 10px;
 }
 
-.top a:nth-child(3) {
-  position: relative;
-  top: 5px;
+span.top a.im {
+  padding-right: 10px;
 }
 
-a.imgicon {
-  width: 28px;
-  height: 30px;
-  background: url(profile.jpg) no-repeat;
-  border-radius: 100%;
+span.top a.icon {
+  padding: 2px 10px 0 0;
+  padding-top: 2px;
 }
 
-.top a:nth-child(4) {
-  position: relative;
-  top: 9px;
+span.top a.imgicon {
+  background-image: url("./profile.jpg");
+  height: 29px;
+  width: 30px;
+  border-radius: 27px;
 }
 
-/*  */
-
-#centerRegion {
+main {
   text-align: center;
-  width: 80%;
-  margin: auto;
-}
-
-div.gimg img {
-  position: relative;
-  top: 30px;
+  padding-top: 90px;
 }
 
 div.form {
+  padding-top: 20px;
   position: relative;
-  top: 50px;
-  text-align: center;
 }
 
-input[type="text"] {
-  width: 478px;
-  border: 1px solid rgb(224, 224, 224);
+div.form input[type="text"] {
+  width: 500px;
+  padding: 13px 30px;
   outline: none;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 50px;
-  padding: 12px 39px 12px 39px;
-  background-color: transparent;
 }
 
-input[type="text"]:focus {
-  border-color: rgb(238, 236, 236);
-  box-shadow: 1px 1px 3px 0 rgb(211, 211, 211);
+div.form input[type="text"]:hover {
+  box-shadow: 1px 1px 1px .7px rgb(238, 238, 238);
 }
 
-input[type="text"]:hover {
-  border-color: rgb(238, 236, 236);
-  box-shadow: 1px 1px 3px 0 rgb(211, 211, 211);
+div.form input[type="text"]:focus {
+  box-shadow: 1px 1px 1px .7px rgb(238, 238, 238);
 }
 
-.form a:nth-child(2) {
-  position: relative;
-  right: 475px;
-  top: 8px;
+
+
+div.form a:nth-child(2) {
+  position: absolute;
+  left: 430px;
+  top: 29px;
+  backface-visibility: hidden;
 }
 
-.form a:nth-child(3) {
-  position: relative;
-  right: 70px;
-  top: 7px;
+div.form a:nth-child(3) {
+  position: absolute;
+  left: 896px;
+  top: 30px;
 }
 
 div.buttons {
-  position: relative;
-  top: 70px;
-  right: 8px;
+  padding-top: 20px;
 }
 
 div.buttons button {
+  padding: 10px 15px;
+  outline: none;
   border: none;
-  padding: 10px;
   border-radius: 4px;
-  margin-left: 5px;
 }
 
-div.buttons a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-  color: #222;
-}
-/*  */
-
-div#belowCenter {
-  text-align: center;
-  position: relative;
-  top: 100px;
-  /* right: 20px; */
-  font-size: 13px;
+div.buttons button a {
+  color: rgb(110, 110, 110);
+  font-size: 12px;
 }
 
-div#belowCenter a {
-  text-decoration: none;
-  color: #1a0dab;
-}
-/*  */
-
-div#footerRegion {
-  position: relative;
-  top: 260px;
-  background: rgb(241, 240, 240);
-  height: 77px;
+div.buttons button:nth-child(1) {
+  margin-right: 6px;
 }
 
-div#footerRegion h2 {
-  font-weight: 400;
+section#belowCenter {
+  padding: 10px;
+  font-size: 12px;
+}
+
+section#belowCenter a {
+  margin: 0 3px;
+}
+
+footer {
+  background-color: #EFEFEF;
+  color: rgb(110, 110, 110);
+}
+
+footer h2 {
+  border-bottom: 1px solid rgb(207, 206, 206);
+  margin-bottom: 11px;
+  padding: 10px 0 10px 20px;
   font-size: 15px;
-  color: rgba(0, 0, 0, 0.54);
-  padding: 9px 15px;
-  border-top: 1px solid rgb(223, 220, 220);
-  border-bottom: 1px solid rgb(223, 220, 220);
+  font-weight: 100;
 }
 
-div#footerRegion span a {
-  text-decoration: none;
-  color: #5f6368;
+footer div.container {
+  margin: 3px 20px 40px 20px;
+}
+
+footer div.container span a {
+  color: rgb(110, 110, 110);
   font-size: 14px;
-  padding: 3px;
+  padding-right: 4px;
 }
 
-div#footerRegion .span1 {
-  position: relative;
-  left: 12px;
-  top: 8px;
+span.span1 {
+  float: left;
 }
 
-div#footerRegion .span2 {
-  position: relative;
-  left: 860px;
-  top: 8px;
+span.span2 {
+  float: right;
 }
 
-/*  */
-
-@media (max-width: 730px) {
-  .top {
-    position: relative;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    border: 1px solid rgb(224, 224, 224);
+@media (max-width: 768px) {
+  div.form input[type="text"] {
+    width: 350px;
+    padding: 10px 30px;
     outline: none;
+    border: 1px solid rgb(204, 204, 204);
     border-radius: 50px;
-    padding: 12px 39px;
-    background-color: transparent;
   }
 
-  .form a:nth-child(2) {
-    position: relative;
-    right: 120px;
-    top: -33px;
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 64px;
+    top: 25px;
   }
 
-  .form a:nth-child(3) {
-    position: relative;
-    right: -117px;
-    top: -33px;
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 387px;
+    top: 28px;
   }
 
-  div#footerRegion {
-    text-align: center;
-    height: 200px;
+  .seperator {
+    height: 270px;
   }
 
-  div#footerRegion span a {
-    text-decoration: none;
-    color: #5f6368;
-    font-size: 14px;
-    padding: 3px;
-    display: block;
+  footer div.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
   }
 
-  div#footerRegion .span1 {
-    position: relative;
-    left: 0px;
-    top: 0px;
+  span.span1 {
+    float: none;
   }
-
-  div#footerRegion .span2 {
-    position: relative;
-    left: 0px;
-    top: 0px;
+  
+  span.span2 {
+    float: none;
   }
 }

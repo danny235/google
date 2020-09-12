@@ -10,36 +10,35 @@
 </head>
 
 <body>
-    <div id="headerRegion">
-        <span class="div1">
-            <a href="#">
-                <h3>About</h3>
-            </a>
-            <a href="#">
-                <h3>Store</h3>
-            </a>
-        </span>
-        
-        <span class="top">
-            <a href="#">
-                <h3>Gmail</h3>
-            </a>
-            <a href="#">
-                <h3>Images</h3>
-            </a>
-            <a class="icon" href="#">
-                <div><img src="apps.png" alt=""></div>
-            </a>
-            <a class="imgicon" href="#">
-            </a>
-        </span>
-    </div>
-    <div id="centerRegion">
+    <header id="headerRegion">
+        <nav class="container">
+            <span class="top">
+                <a class="gm" href="#">
+                    <h3>Gmail</h3>
+                </a>
+                <a class="im" href="#">
+                    <h3>Images</h3>
+                </a>
+                <a class="icon" href="#">
+                    <div><img src="apps.png" alt=""></div>
+                </a>
+                <a class="imgicon" href="#">
+                </a>
+            </span>
+        </nav>
+
+    </header>
+
+
+    <div class="clear-fix"></div>
+
+
+    <main class="container" id="centerRegion">
         <div class="subRegion">
             <div class="gimg">
-                <img src="google.png" width="272px" height="90px" alt="">
+                <img src="google.png" width="272px" height="90px" alt="Google">
             </div>
-            
+
             <div class="form">
                 <input id="textField" type="text">
 
@@ -53,34 +52,51 @@
             </div>
 
         </div>
-    </div>
-    <div id="belowCenter">
-        Google offered in:
-        <a href="">Hausa</a>
-        <a href="">Igbo</a>
-        <a class="difFont" href="">Ede Yoruba</a>
-        <a href="">Nigerian Pidgin</a>
 
-    </div>
-    <div id="footerRegion">
+        <section class="container" id="belowCenter">
+            Google offered in:
+            <a href="">Hausa</a>
+            <a href="">Igbo</a>
+            <a class="difFont" href="">Èdè Yorùbá</a>
+            <a href="">Nigerian Pidgin</a>
+
+        </section>
+    </main>
+
+    <div class="seperator"></div>
+
+
+
+    <footer id="footerRegion">
         <h2>Nigeria</h2>
-        <span class="span1">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">About</a>
-            <a href="#">How Search works</a>
-        </span>
+        <div class="container">
+            <span class="span1">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search works</a>
+            </span>
+            
+            <span class="span2">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </span>
+        </div>
+        <div class="clear-fix"></div>
+    </footer>
 
-        <span class="span2">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
-        </span>
 
-
-    </div>
-
-
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
