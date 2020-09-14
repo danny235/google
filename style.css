@@ -180,6 +180,14 @@ span.span2 {
   float: right;
 }
 
+
+
+@media (min-width: 770px) {
+  footer div.container span.Nspan {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   div.form input[type="text"] {
     width: 350px;
@@ -205,17 +213,117 @@ span.span2 {
     height: 270px;
   }
 
-  footer div.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
-
   span.span1 {
     float: none;
   }
   
   span.span2 {
     float: none;
+  }
+
+  div.buttons {
+    display: none;
+  }
+}
+
+/* Smart Phones */
+@media (max-width: 768px) {
+  section#belowCenter span.Gtext {
+    display: block;
+    font-size: 13px;
+    margin: 5px 0 12px 0;
+  }
+
+  footer div.container span a:nth-child(4) {
+    display: none;
+  }
+  
+  footer div.container span{
+    text-align: center;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  footer div.container span.span2 {
+    display: none;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 375px) {
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 320px;
+    top: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  div.form input[type="text"] {
+    width: 304px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 275px;
+    top: 28px;
+  }
+}
+
+@media (max-width: 411px) {
+  div.form input[type="text"] {
+    width: 330px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 36px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 333px;
+    top: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 12px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 306px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 506px) and (max-width: 507px) {
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 3px;
+    top: 28px;
   }
 }
