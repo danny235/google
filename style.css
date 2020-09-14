@@ -114,10 +114,11 @@ div.form a:nth-child(2) {
   backface-visibility: hidden;
 }
 
-div.form a:nth-child(3) {
+div.form a.voiceSearch {
   position: absolute;
   left: 896px;
   top: 30px;
+
 }
 
 div.buttons {
@@ -142,11 +143,12 @@ div.buttons button:nth-child(1) {
 
 section#belowCenter {
   padding: 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 section#belowCenter a {
   margin: 0 3px;
+  color: #1a0dab;
 }
 
 footer {
@@ -210,7 +212,7 @@ span.span2 {
   }
 
   .seperator {
-    height: 270px;
+    height: 400px;
   }
 
   span.span1 {
@@ -234,6 +236,10 @@ span.span2 {
     margin: 5px 0 12px 0;
   }
 
+  footer  {
+    padding-bottom: 1px;
+  }
+
   footer div.container span a:nth-child(4) {
     display: none;
   }
@@ -244,7 +250,7 @@ span.span2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    justify-items: center;
+    justify-items: end;
     align-items: center;
   }
 
