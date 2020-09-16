@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Google</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,18 +14,22 @@
     <header id="headerRegion">
         <nav class="container">
             <span class="topLeft">
-                <button class="burger">
+                <button id="burger" data-target="#menu">
                     <div></div>
                     <div></div>
                     <div></div>
                 </button>
                 <span class="links">
-                    <a class="all" href="#"><h3 class="active">ALL</h3></a>
-                    <a class="images" href="#"><h3>IMAGES</h3></a>
+                    <a class="all" href="#">
+                        <h3 class="active">ALL</h3>
+                    </a>
+                    <a class="images" href="#">
+                        <h3>IMAGES</h3>
+                    </a>
                 </span>
-               
+
             </span>
-            
+
             <span class="top">
                 <a class="gm" href="#">
                     <h3>Gmail</h3>
@@ -44,7 +49,76 @@
 
 
     <div class="clear-fix"></div>
+    <div id="menu">
+        <img id="menuG" src="google.png" width="90px" height="30px" alt="Google">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
 
+            <li>
+                <a href="#">
+                    <i class="fa fa-history"></i>
+                    <span>Search activity</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-book"></i>
+                    <span>Collections</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-toggle-off"></i>
+                    <span>Offline searches</span>
+                </a>
+            </li>
+
+            <div id="borderLine"></div>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-shield"></i>
+                    <span>Your data in Search</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                    <span>How Search works</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-question-circle"></i>
+                    <span>Help</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-comment"></i>
+                    <span>Send feedback</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
 
     <main class="container" id="centerRegion">
         <div class="subRegion">
@@ -116,8 +190,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script> -->
+        crossorigin="anonymous"></script>-->
+    <script src="nav-slide.js"></script> 
 </body>
 
 </html>

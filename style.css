@@ -25,15 +25,19 @@ a {
   height: 180px;
 }
 
+li {
+  list-style: none;
+}
 
-
+i {
+  font-size: 10px;
+}
 
 /* ----- */
 
 header {
   margin-top: -10px;
 }
-
 
 nav.container {
   padding-top: 18px;
@@ -45,7 +49,6 @@ nav.container span.top a {
   font-weight: 300;
   font-style: normal;
 }
-
 
 span.div1 a.a1 {
   grid-column: 1;
@@ -101,14 +104,12 @@ div.form input[type="text"] {
 }
 
 div.form input[type="text"]:hover {
-  box-shadow: 1px 1px 1px .7px rgb(238, 238, 238);
+  box-shadow: 1px 1px 1px 0.7px rgb(238, 238, 238);
 }
 
 div.form input[type="text"]:focus {
-  box-shadow: 1px 1px 1px .7px rgb(238, 238, 238);
+  box-shadow: 1px 1px 1px 0.7px rgb(238, 238, 238);
 }
-
-
 
 div.form a:nth-child(2) {
   position: absolute;
@@ -121,7 +122,6 @@ div.form a.voiceSearch {
   position: absolute;
   left: 896px;
   top: 30px;
-
 }
 
 div.buttons {
@@ -151,11 +151,11 @@ section#belowCenter {
 
 section#belowCenter a {
   margin: 0 3px;
-  color: rgb(116, 116, 255) ;
+  color: rgb(116, 116, 255);
 }
 
 footer {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   color: rgb(110, 110, 110);
 }
 
@@ -185,7 +185,49 @@ span.span2 {
   float: right;
 }
 
+/* menu */
+#menu {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 74%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation-name: nav-slide;
+  animation-duration: 1s;
+  display: none;
+  box-shadow: 0 10px 10px 400px rgba(163, 163, 163, 0.54);
+}
 
+@keyframes nav-slide {
+  0% {
+    width: 47%;
+  }
+
+  100% {
+    width: 74%;
+  }
+}
+
+#menuG {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#borderLine {
+  border: 0.01111px solid rgba(163, 163, 163, 0.54);
+}
+
+#menu ul li {
+  margin: 30px 0;
+  padding-left: 20px;
+}
+
+#menu ul li a {
+  color: rgba(0, 0, 0, 0.54);
+}
+/* ----------------------------------- */
 
 @media (min-width: 770px) {
   footer div.container span.Nspan {
@@ -215,6 +257,10 @@ span.span2 {
     left: 518px;
     top: 28px;
   }
+
+  .seperator {
+    height: 380px;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 768px) {
@@ -238,34 +284,30 @@ span.span2 {
     top: 28px;
   }
 
-
   span.span1 {
     float: none;
   }
-  
+
   span.span2 {
     float: none;
   }
-
 }
 
 /* Smart Phones */
 @media (max-width: 768px) {
-
-  
   .topLeft {
     padding: 10px 0 10px 8px;
     clear: both;
     float: left;
   }
-  .topLeft .links a h3{
+  .topLeft .links a h3 {
     display: inline-block;
     color: rgb(143, 143, 143);
     font-size: 14px;
     padding-left: 9px;
   }
-  
-  button.burger {
+
+  button#burger {
     outline: none;
     background: none;
     border: none;
@@ -273,7 +315,7 @@ span.span2 {
     margin-top: -1px;
   }
 
-  .topLeft .burger div{
+  .topLeft #burger div {
     border: 1px solid rgb(143, 143, 143);
     width: 21px;
     pointer-events: none;
@@ -287,15 +329,15 @@ span.span2 {
     margin: 5px 0 12px 0;
   }
 
-  footer  {
+  footer {
     padding-bottom: 1px;
   }
 
   footer div.container span a:nth-child(4) {
     display: none;
   }
-  
-  footer div.container span{
+
+  footer div.container span {
     text-align: center;
     padding-bottom: 30px;
     display: grid;
@@ -309,7 +351,9 @@ span.span2 {
     display: none;
   }
 
-  div.buttons, .gm, .im {
+  div.buttons,
+  .gm,
+  .im {
     display: none;
   }
 
@@ -324,7 +368,6 @@ span.span2 {
     margin-left: 10px;
     width: 47px;
   }
-
 }
 
 @media (min-width: 374px) and (max-width: 375px) {
@@ -423,7 +466,7 @@ span.span2 {
     border: 1px solid rgb(204, 204, 204);
     border-radius: 50px;
   }
-  
+
   div.form a:nth-child(2) {
     position: absolute;
     left: 12px;
