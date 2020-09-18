@@ -201,12 +201,12 @@ span.span2 {
 }
 
 .animationSlide {
-  animation: nav-slide 1s;
+  animation: nav-slide 0.5s;
 }
 
-/* .animationRemove {
-  animation: nav-reverse 1s;
-} */
+.animationRemove {
+  animation: nav-reverse 0.5s;
+}
 
 @keyframes nav-slide {
   from {
@@ -218,15 +218,15 @@ span.span2 {
   }
 }
 
-/* @keyframes nav-reverse {
+@keyframes nav-reverse {
   from {
     transform: translateX(0%);
   }
 
   to {
-    transform: translateX(-74%);
+    transform: translateX(-7400px);
   }
-} */
+}
 
 /* @keyframes nav-slide {
   0% {

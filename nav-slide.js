@@ -11,8 +11,8 @@ btn.addEventListener("click", () => {
 
 document.addEventListener("click", (e) => {
     // console.log(`clientX:${e.clientX} clientY:${e.clientY}`);
-    if((e.clientX) >= 264 && (e.clientY) >= 13) {
+    if ((e.clientX) >= 264 && (e.clientY) >= 13) {
         menu.classList.remove("animationSlide");
-            menu.style.display = "none";
+        menu.style.display = "none";
     }
 });
