@@ -197,15 +197,14 @@ span.span2 {
   left: 0;
   z-index: 1;
   display: none;
-  box-shadow: 0 10px 10px 400px rgba(163, 163, 163, 0.54);
 }
 
 .animationSlide {
-  animation: nav-slide 0.5s;
+  animation: nav-slide 0.5s forwards;
 }
 
 .animationRemove {
-  animation: nav-reverse 0.5s;
+  animation: nav-reverse 0.5s forwards;
 }
 
 @keyframes nav-slide {
@@ -224,19 +223,10 @@ span.span2 {
   }
 
   to {
-    transform: translateX(-7400px);
+    transform: translateX(-100%);
   }
 }
 
-/* @keyframes nav-slide {
-  0% {
-    width: 47%;
-  }
-
-  100% {
-    width: 74%;
-  }
-} */
 
 #menuG {
   margin-top: 10px;
@@ -343,6 +333,7 @@ span.span2 {
     border: none;
     float: left;
     margin-top: -1px;
+    cursor: pointer;
   }
 
   .topLeft #burger div {
@@ -367,14 +358,11 @@ span.span2 {
     display: none;
   }
 
-  footer div.container span {
+  footer .container span{
     text-align: center;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: 8em 4em 4em;
-    grid-template-rows: auto auto auto;
-    justify-items: end;
-    align-items: center;
+    display: block;
+    float: none;
+    padding: 10px 20px;
   }
 
   footer div.container span.span2 {
