@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Global */
+.container {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.clear-fix {
+  clear: right;
+}
+
+.seperator {
+  height: 180px;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-size: 10px;
+  pointer-events: none;
+}
+
+/* ----- */
+
+header {
+  margin-top: -22px;
+}
+
+nav.container {
+  padding-top: 18px;
+}
+
+nav.container span.top a {
+  color: rgb(44, 44, 44);
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+span.div1 a.a1 {
+  grid-column: 1;
+}
+
+span.div1 a.a2 {
+  grid-column: 3;
+}
+
+span.top {
+  display: flex;
+  float: right;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+span.top a.gm {
+  padding-right: 10px;
+}
+
+span.top a.im {
+  padding-right: 10px;
+}
+
+span.top a.icon {
+  padding: 2px 10px 0 0;
+  padding-top: 2px;
+}
+
+span.top a.imgicon {
+  background-image: url("../images/profile.jpg");
+  height: 29px;
+  width: 30px;
+  border-radius: 27px;
+}
+
+main {
+  text-align: center;
+  padding-top: 50px;
+}
+
+div.form {
+  padding-top: 20px;
+  position: relative;
+}
+
+div.form input[type="text"] {
+  width: 500px;
+  padding: 13px 30px;
+  outline: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 50px;
+}
+
+div.form input[type="text"]:hover {
+  box-shadow: 1px 1px 1px 0.7px rgb(238, 238, 238);
+}
+
+div.form input[type="text"]:focus {
+  box-shadow: 1px 1px 1px 0.7px rgb(238, 238, 238);
+}
+
+div.form a:nth-child(2) {
+  position: absolute;
+  left: 430px;
+  top: 29px;
+  backface-visibility: hidden;
+}
+
+div.form a.voiceSearch {
+  position: absolute;
+  left: 896px;
+  top: 30px;
+}
+
+div.buttons {
+  padding-top: 20px;
+}
+
+div.buttons button {
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+div.buttons button a {
+  color: rgb(110, 110, 110);
+  font-size: 12px;
+}
+
+div.buttons button:nth-child(1) {
+  margin-right: 6px;
+}
+
+section#belowCenter {
+  padding: 10px;
+  font-size: 13px;
+}
+
+section#belowCenter a {
+  margin: 0 3px;
+  color: #4285F4;
+}
+
+footer {
+  background-color: #efefef;
+  color: rgb(110, 110, 110);
+}
+
+footer h2 {
+  border-bottom: 1px solid rgb(207, 206, 206);
+  margin-bottom: 11px;
+  padding: 10px 0 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+footer div.container {
+  margin: 3px 20px 40px 20px;
+}
+
+footer div.container span a {
+  color: rgb(110, 110, 110);
+  font-size: 14px;
+  padding-right: 4px;
+}
+
+span.span1 {
+  float: left;
+}
+
+span.span2 {
+  float: right;
+}
+
+/* menu */
+#menu {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 74%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.animationSlide {
+  animation: nav-slide 0.5s forwards;
+}
+
+.animationRemove {
+  animation: nav-reverse 0.5s forwards;
+}
+
+@keyframes nav-slide {
+  from {
+    transform: translateX(-74%)
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes nav-reverse {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+#menuG {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#borderLine {
+  border: 0.01111px solid rgba(163, 163, 163, 0.54);
+}
+
+#menu ul li {
+  margin: 30px 0;
+  padding-left: 20px;
+}
+
+#menu ul li a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* ----------------------------------- */
+
+@media (min-width: 770px) {
+  footer div.container span.Nspan {
+    display: none;
+  }
+
+  .topLeft {
+    display: none;
+  }
+
+  div.form input[type="text"] {
+    width: 350px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 210px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 518px;
+    top: 28px;
+  }
+
+  .seperator {
+    height: 380px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 768px) {
+  div.form input[type="text"] {
+    width: 350px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 210px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 518px;
+    top: 28px;
+  }
+
+  span.span1 {
+    float: none;
+  }
+
+  span.span2 {
+    float: none;
+  }
+}
+
+/* Smart Phones */
+@media (max-width: 768px) {
+  .topLeft {
+    padding: 10px 0 10px 8px;
+    clear: both;
+    float: left;
+  }
+
+  .topLeft .links a h3 {
+    display: inline-block;
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+    padding-left: 9px;
+    margin: 0 1px 0 10px;
+  }
+
+  button#burger {
+    outline: none;
+    background: none;
+    border: none;
+    float: left;
+    margin-top: 1px;
+    cursor: pointer;
+  }
+
+  .topLeft #burger div {
+    border: 1px solid rgb(143, 143, 143);
+    width: 21px;
+    pointer-events: none;
+    margin-bottom: 1px;
+    margin-top: 3px;
+  }
+
+  section#belowCenter span.Gtext {
+    display: block;
+    font-size: 13px;
+    margin: 5px 0 12px 0;
+  }
+
+  footer {
+    padding-bottom: 1px;
+  }
+
+  footer div.container span a:nth-child(4) {
+    display: none;
+  }
+
+  footer .container span{
+    text-align: center;
+    display: block;
+    float: none;
+    padding: 20px 13px;
+  }
+
+  footer div.container span.span2 {
+    display: none;
+  }
+
+  div.buttons,
+  .gm,
+  .im {
+    display: none;
+  }
+
+  span.links a.all h3, span.links a.images h3 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  span.links a.all h3 {
+    margin-left: 18px;
+  }
+
+  .seperator {
+    height: 270px;
+  } 
+
+  .active {
+    border-bottom: 1px solid #4285F4;
+    color: #4285F4 !important;
+    padding-bottom: 15px;
+    width: 4em;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 375px) {
+  div.form input[type="text"] {
+    width: 330px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 19px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 320px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 320px) {
+  div.form input[type="text"] {
+    width: 300px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 7px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 275px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 413px) and (max-width: 414px) {
+  div.form input[type="text"] {
+    width: 330px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 36px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 333px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 411px) {
+  div.form input[type="text"] {
+    width: 330px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 36px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 333px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 359px) and (max-width: 360px) {
+  div.form input[type="text"] {
+    width: 330px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 12px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 306px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 506px) and (max-width: 507px) {
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 3px;
+    top: 28px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 505px) {
+  div.form input[type="text"] {
+    width: 390px;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+  }
+
+  div.form a:nth-child(2) {
+    position: absolute;
+    left: 42px;
+    top: 25px;
+  }
+
+  div.form a:nth-child(3) {
+    position: absolute;
+    left: 400px;
+    top: 28px;
+  }
+}
