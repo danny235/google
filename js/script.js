@@ -4,10 +4,13 @@ const allH3 = document.querySelector(".allH3");
 const imagesH3 = document.querySelector(".imagesH3");
 const active = document.querySelector(".active");
 
+document.addEventListener('DOMContentLoaded', () => {
+    allH3.classList.add("active");
+});
+
 all.addEventListener("click", () => {
     allH3.classList.add("active");
-    var x = allH3.getAttribute("class");
-    console.log(x);
+    allH3.classList.add("active");
     imagesH3.classList.remove("active");
 });
 

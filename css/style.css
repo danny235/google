@@ -11,14 +11,12 @@ body {
 
 /* Global */
 .container {
-  margin: 10px;
+  margin: 17px;
 }
 
 a {
   text-decoration: none;
 }
-
-
 
 .clear-fix {
   clear: right;
@@ -63,27 +61,34 @@ span.div1 a.a2 {
 }
 
 span.top {
-  display: flex;
   float: right;
-  align-items: center;
-  padding-left: 10px;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+span.top a {
+  margin: 0 0 0 10px;
 }
 
 span.top a.gm {
+  margin-top: 4px;
   padding-right: 10px;
 }
 
 span.top a.im {
+  margin-top: 4px;
   padding-right: 10px;
 }
 
 span.top a.icon {
-  padding: 2px 10px 0 0;
+  padding: 4px 10px 0 0;
   padding-top: 2px;
 }
 
 span.top a.imgicon {
+  margin-top: -5px;
   background-image: url("../images/profile.jpg");
   height: 29px;
   width: 30px;
@@ -156,7 +161,7 @@ section#belowCenter {
 
 section#belowCenter a {
   margin: 0 3px;
-  color: #4285F4;
+  color: #4285f4;
 }
 
 footer {
@@ -179,7 +184,8 @@ footer div.container {
 footer div.container span a {
   color: rgb(110, 110, 110);
   font-size: 14px;
-  padding-right: 4px;
+  margin: 0 0 0 18px;
+
 }
 
 span.span1 {
@@ -212,7 +218,7 @@ span.span2 {
 
 @keyframes nav-slide {
   from {
-    transform: translateX(-74%)
+    transform: translateX(-74%);
   }
 
   to {
@@ -229,7 +235,6 @@ span.span2 {
     transform: translateX(-100%);
   }
 }
-
 
 #menuG {
   margin-top: 10px;
@@ -318,17 +323,35 @@ span.span2 {
 /* Smart Phones */
 @media (max-width: 768px) {
   .topLeft {
-    padding: 10px 0 10px 8px;
     clear: both;
     float: left;
+  }
+
+  .topLeft span.links {
+    float: left;
+    margin-top: -2px;
+  }
+
+  .topLeft span.links a {
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .topLeft span.links .allH3 {
+    margin: 0 8px 0 19px;
   }
 
   .topLeft .links a h3 {
     display: inline-block;
     color: rgb(143, 143, 143);
     font-size: 14px;
-    padding-left: 9px;
-    margin: 0 1px 0 10px;
+    padding: -2px 10px 10px;
+  }
+
+  .active {
+    border-bottom: 2px solid #4285f4;
+    color: #4285f4 !important;
+    padding: 0 0 10px 0;
   }
 
   button#burger {
@@ -342,10 +365,9 @@ span.span2 {
 
   .topLeft #burger div {
     border: 1px solid rgb(143, 143, 143);
-    width: 21px;
+    width: 18px;
     pointer-events: none;
-    margin-bottom: 1px;
-    margin-top: 3px;
+    margin: 2.1px 0;
   }
 
   section#belowCenter span.Gtext {
@@ -362,7 +384,7 @@ span.span2 {
     display: none;
   }
 
-  footer .container span{
+  footer .container span {
     text-align: center;
     display: block;
     float: none;
@@ -379,24 +401,14 @@ span.span2 {
     display: none;
   }
 
-  span.links a.all h3, span.links a.images h3 {
+  span.links a.all h3,
+  span.links a.images h3 {
     font-size: 12px;
     font-weight: bold;
   }
 
-  span.links a.all h3 {
-    margin-left: 18px;
-  }
-
   .seperator {
-    height: 270px;
-  } 
-
-  .active {
-    border-bottom: 1px solid #4285F4;
-    color: #4285F4 !important;
-    padding-bottom: 15px;
-    width: 4em;
+    height: 268px;
   }
 }
 
