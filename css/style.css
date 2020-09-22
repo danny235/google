@@ -238,7 +238,7 @@ span.span2 {
 
 #menuG {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 hr {
@@ -250,7 +250,7 @@ hr {
 
 
 #menu ul li {
-  margin: 32px 0 0 15px;
+  margin: 22px 0 0 15px;
 }
 
 
@@ -261,8 +261,7 @@ hr {
 }
 
 #menu ul li a img {
-  margin-top: -3px;
-  margin-right: 4px;
+  margin: -3px 12px 0 0;
 }
 
 
@@ -335,7 +334,6 @@ hr {
 /* Smart Phones */
 @media (max-width: 768px) {
   .topLeft {
-    clear: both;
     float: left;
   }
 
@@ -350,7 +348,7 @@ hr {
   }
 
   .topLeft span.links .allH3 {
-    margin: 0 8px 0 19px;
+    margin: 0 10px 0 21px;
   }
 
   .topLeft .links a h3 {
@@ -435,13 +433,13 @@ hr {
 
   div.form a:nth-child(2) {
     position: absolute;
-    left: 19px;
+    left: 13px;
     top: 25px;
   }
 
   div.form a:nth-child(3) {
     position: absolute;
-    left: 320px;
+    left: 314px;
     top: 28px;
   }
 }
