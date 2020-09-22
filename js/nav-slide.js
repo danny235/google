@@ -7,7 +7,6 @@ btn.addEventListener("click", () => {
     menu.classList.add("animationSlide");
     menu.classList.remove("animationRemove");
     menu.style.boxShadow = "0 10px 10px 400px rgba(163, 163, 163, 0.54)";
-    document.style.pointerEvents = "none";
 });
 
 
